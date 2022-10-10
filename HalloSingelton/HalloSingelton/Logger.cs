@@ -2,7 +2,7 @@
 {
     internal class Logger
     {
-        private static Logger _instance;
+        private static Logger? _instance;
 
         public static object _syncObj = new();
         public static Logger Instance
@@ -11,8 +11,7 @@
             {
                 lock (_syncObj)
                 {
-                    if (_instance == null)
-                        _instance = new Logger();
+                    _instance ??= new Logger();
                 }
 
                 return _instance;
