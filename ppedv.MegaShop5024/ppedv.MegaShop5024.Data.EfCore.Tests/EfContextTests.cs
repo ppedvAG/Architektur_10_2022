@@ -2,7 +2,7 @@ using AutoFixture;
 using AutoFixture.Kernel;
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using ppedv.MegaShop5024.Model;
+using ppedv.MegaShop5024.Model.DomainModel;
 using System.Reflection;
 using System.Reflection.Emit;
 

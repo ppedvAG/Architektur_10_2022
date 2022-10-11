@@ -1,4 +1,4 @@
-﻿namespace ppedv.MegaShop5024.Model
+﻿namespace ppedv.MegaShop5024.Model.DomainModel
 {
     public class OrderItem : Entity
     {

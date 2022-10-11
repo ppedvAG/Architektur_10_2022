@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using ppedv.MegaShop5024.Model;
+using ppedv.MegaShop5024.Model.DomainModel;
 
 namespace ppedv.MegaShop5024.Data.EfCore
 {
@@ -21,7 +21,7 @@ namespace ppedv.MegaShop5024.Data.EfCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            
+
             optionsBuilder.UseLazyLoadingProxies().UseSqlServer(_conString);
         }
 

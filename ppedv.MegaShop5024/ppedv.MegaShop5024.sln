@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Data.EfC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Data.EfCore.Tests", "ppedv.MegaShop5024.Data.EfCore.Tests\ppedv.MegaShop5024.Data.EfCore.Tests.csproj", "{D01C72E1-CE9E-426C-B0AE-91CB3704629D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastucture", "Infrastucture", "{77FAB040-9509-4110-9946-E53FF6644BED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{FD60C484-D792-40DC-9E0B-38E439AC78EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Application.ProductService", "ppedv.MegaShop5024.Application.ProductService\ppedv.MegaShop5024.Application.ProductService.csproj", "{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +35,19 @@ Global
 		{D01C72E1-CE9E-426C-B0AE-91CB3704629D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D01C72E1-CE9E-426C-B0AE-91CB3704629D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D01C72E1-CE9E-426C-B0AE-91CB3704629D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{761B92C0-358E-4909-8995-FE1CCA5241F7} = {FD60C484-D792-40DC-9E0B-38E439AC78EA}
+		{F18E69A5-525A-41A8-AB19-E9FE03F03881} = {77FAB040-9509-4110-9946-E53FF6644BED}
+		{D01C72E1-CE9E-426C-B0AE-91CB3704629D} = {77FAB040-9509-4110-9946-E53FF6644BED}
+		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029} = {94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4FCC403-F024-4C95-837F-839D0F59A661}
