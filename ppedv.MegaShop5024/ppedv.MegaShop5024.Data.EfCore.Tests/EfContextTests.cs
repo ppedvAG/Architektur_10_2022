@@ -1,5 +1,6 @@
 using AutoFixture;
 using AutoFixture.Kernel;
+using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
 using ppedv.MegaShop5024.Model;
 using System.Reflection;
@@ -145,7 +146,7 @@ namespace ppedv.MegaShop5024.Data.EfCore.Tests
 
 
         [Fact]
-        public void Can_read_Product_AutoFix()
+        public void Can_read_Product_AutoFix_FluentAssertions()
         {
             var fix = new Fixture();
             fix.Behaviors.Add(new OmitOnRecursionBehavior());
@@ -161,7 +162,7 @@ namespace ppedv.MegaShop5024.Data.EfCore.Tests
             using (var con = new EfContext())
             {
                 var loaded = con.Products.Find(prod.Id);
-                Assert.Equal(prod.Name, loaded?.Name);
+                loaded.Should().BeEquivalentTo(prod, x => x.IgnoringCyclicReferences());
             }
         }
 
