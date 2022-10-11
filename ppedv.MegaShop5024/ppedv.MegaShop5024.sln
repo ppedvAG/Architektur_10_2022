@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Model", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Data.EfCore", "ppedv.MegaShop5024.Data.EfCore\ppedv.MegaShop5024.Data.EfCore.csproj", "{F18E69A5-525A-41A8-AB19-E9FE03F03881}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Data.EfCore.Tests", "ppedv.MegaShop5024.Data.EfCore.Tests\ppedv.MegaShop5024.Data.EfCore.Tests.csproj", "{D01C72E1-CE9E-426C-B0AE-91CB3704629D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F18E69A5-525A-41A8-AB19-E9FE03F03881}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F18E69A5-525A-41A8-AB19-E9FE03F03881}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F18E69A5-525A-41A8-AB19-E9FE03F03881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01C72E1-CE9E-426C-B0AE-91CB3704629D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01C72E1-CE9E-426C-B0AE-91CB3704629D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01C72E1-CE9E-426C-B0AE-91CB3704629D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01C72E1-CE9E-426C-B0AE-91CB3704629D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

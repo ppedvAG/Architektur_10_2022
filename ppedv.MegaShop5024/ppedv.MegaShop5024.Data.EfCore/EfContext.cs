@@ -21,7 +21,23 @@ namespace ppedv.MegaShop5024.Data.EfCore
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            
             optionsBuilder.UseLazyLoadingProxies().UseSqlServer(_conString);
+        }
+
+        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+        {
+            //configurationBuilder.CreateModelBuilder().
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Category>().ToTable("Category");
+            modelBuilder.Entity<Customer>().ToTable("Customer");
+            modelBuilder.Entity<Discount>().ToTable("Discount");
+            modelBuilder.Entity<Order>().ToTable("Order");
+            modelBuilder.Entity<OrderItem>().ToTable("OrderItem");
+            modelBuilder.Entity<Product>().ToTable("Product");
         }
     }
 }
