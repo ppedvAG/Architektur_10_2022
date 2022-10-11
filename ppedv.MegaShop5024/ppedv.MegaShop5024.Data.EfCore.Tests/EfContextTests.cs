@@ -1,5 +1,8 @@
+using AutoFixture;
+using AutoFixture.Kernel;
 using Microsoft.EntityFrameworkCore;
 using ppedv.MegaShop5024.Model;
+using System.Reflection;
 using System.Reflection.Emit;
 
 namespace ppedv.MegaShop5024.Data.EfCore.Tests
@@ -134,12 +137,52 @@ namespace ppedv.MegaShop5024.Data.EfCore.Tests
                 var loadedCustomer = con.Customers.Find(cust.Id);
                 var loadedOrder = con.Orders.Find(order.Id);
                 con.Customers.Remove(loadedCustomer);
-                con.Orders.Remove(order);
+                con.Orders.Remove(loadedOrder);
                 var result = con.SaveChanges();
                 Assert.Equal(2, result);
             }
         }
 
+
+        [Fact]
+        public void Can_read_Product_AutoFix()
+        {
+            var fix = new Fixture();
+            fix.Behaviors.Add(new OmitOnRecursionBehavior());
+            fix.Customizations.Add(new PropertyNameOmitter(nameof(Entity.Id), nameof(Entity.Modified), nameof(Entity.Created), nameof(Entity.IsDelete)));
+            var prod = fix.Create<Product>();
+
+            using (var con = new EfContext())
+            {
+                con.Add(prod);
+                con.SaveChanges();
+            }
+
+            using (var con = new EfContext())
+            {
+                var loaded = con.Products.Find(prod.Id);
+                Assert.Equal(prod.Name, loaded?.Name);
+            }
+        }
+
+        internal class PropertyNameOmitter : ISpecimenBuilder
+        {
+            private readonly IEnumerable<string> names;
+
+            internal PropertyNameOmitter(params string[] names)
+            {
+                this.names = names;
+            }
+
+            public object Create(object request, ISpecimenContext context)
+            {
+                var propInfo = request as PropertyInfo;
+                if (propInfo != null && names.Contains(propInfo.Name))
+                    return new OmitSpecimen();
+
+                return new NoSpecimen();
+            }
+        }
 
     }
 }
