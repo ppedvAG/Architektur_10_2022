@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Application.ProductService", "ppedv.MegaShop5024.Application.ProductService\ppedv.MegaShop5024.Application.ProductService.csproj", "{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.UI.TestConsole", "ppedv.MegaShop5024.UI.TestConsole\ppedv.MegaShop5024.UI.TestConsole.csproj", "{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{F18E69A5-525A-41A8-AB19-E9FE03F03881} = {77FAB040-9509-4110-9946-E53FF6644BED}
 		{D01C72E1-CE9E-426C-B0AE-91CB3704629D} = {77FAB040-9509-4110-9946-E53FF6644BED}
 		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029} = {94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}
+		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC} = {C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4FCC403-F024-4C95-837F-839D0F59A661}
