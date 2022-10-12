@@ -18,19 +18,24 @@ var builder = new ContainerBuilder();
 builder.RegisterType<ppedv.MegaShop5024.Application.ProductService.ProductManager>().As<IProductManager>();
 builder.RegisterType<ppedv.MegaShop5024.Data.EfCore.EfRepository>().As<IRepository>().SingleInstance();
 builder.RegisterType<ppedv.MegaShop5024.Application.ValidationService.ValidationManager>().AsImplementedInterfaces();
-var container = builder.Build();    
+var container = builder.Build();
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 Console.WriteLine("*** MegaShop 5024 v0.1 ***");
 
 IRepository repo = container.Resolve<IRepository>();
 IProductManager pm = container.Resolve<IProductManager>();
-IValidationManager vm = container.Resolve<IValidationManager>();    
+IValidationManager vm = container.Resolve<IValidationManager>();
 
 var bestProd = pm.GetBestWeightPriceProduct();
 Console.WriteLine($"Bestes: {bestProd.Name}");
 
 foreach (var prod in repo.Query<Product>().Where(x => x.Price >= 0).OrderBy(x => x.Name))
 {
-    Console.WriteLine($"{prod.Name} {prod.Price:c} {prod.Weight}g [{vm.ValidateProduct(prod)}]");
+    Console.WriteLine($"{prod.Name} {prod.Price:c} {prod.Weight}g");
+    var vr = vm.ValidateProduct(prod);
+    foreach (var item in vr.Errors)
+    {
+        Console.WriteLine($"\t{item.ErrorMessage}");
+    }
 }

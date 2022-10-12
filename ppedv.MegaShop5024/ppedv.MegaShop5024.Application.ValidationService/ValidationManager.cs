@@ -8,9 +8,9 @@ namespace ppedv.MegaShop5024.Application.ValidationService
     {
         readonly ProductValidator _proVali = new ProductValidator();
 
-        public bool ValidateProduct(Product prod)
+        public ValidationResult ValidateProduct(Product prod)
         {
-            return _proVali.Validate(prod).IsValid;
+            return _proVali.Validate(prod);
         }
     }
 }
