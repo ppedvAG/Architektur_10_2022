@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Model", "ppedv.MegaShop5024.Model\ppedv.MegaShop5024.Model.csproj", "{761B92C0-358E-4909-8995-FE1CCA5241F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.Model", "ppedv.MegaShop5024.Model\ppedv.MegaShop5024.Model.csproj", "{761B92C0-358E-4909-8995-FE1CCA5241F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Data.EfCore", "ppedv.MegaShop5024.Data.EfCore\ppedv.MegaShop5024.Data.EfCore.csproj", "{F18E69A5-525A-41A8-AB19-E9FE03F03881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.Data.EfCore", "ppedv.MegaShop5024.Data.EfCore\ppedv.MegaShop5024.Data.EfCore.csproj", "{F18E69A5-525A-41A8-AB19-E9FE03F03881}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Data.EfCore.Tests", "ppedv.MegaShop5024.Data.EfCore.Tests\ppedv.MegaShop5024.Data.EfCore.Tests.csproj", "{D01C72E1-CE9E-426C-B0AE-91CB3704629D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.Data.EfCore.Tests", "ppedv.MegaShop5024.Data.EfCore.Tests\ppedv.MegaShop5024.Data.EfCore.Tests.csproj", "{D01C72E1-CE9E-426C-B0AE-91CB3704629D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastucture", "Infrastucture", "{77FAB040-9509-4110-9946-E53FF6644BED}"
 EndProject
@@ -15,11 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCuttin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Application.ProductService", "ppedv.MegaShop5024.Application.ProductService\ppedv.MegaShop5024.Application.ProductService.csproj", "{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.Application.ProductService", "ppedv.MegaShop5024.Application.ProductService\ppedv.MegaShop5024.Application.ProductService.csproj", "{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.UI.TestConsole", "ppedv.MegaShop5024.UI.TestConsole\ppedv.MegaShop5024.UI.TestConsole.csproj", "{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.UI.TestConsole", "ppedv.MegaShop5024.UI.TestConsole\ppedv.MegaShop5024.UI.TestConsole.csproj", "{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Application.ProductService.Tests", "ppedv.MegaShop5024.Application.ProductService.Tests\ppedv.MegaShop5024.Application.ProductService.Tests.csproj", "{57301133-0271-459E-92AF-31F8FBE02026}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57301133-0271-459E-92AF-31F8FBE02026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57301133-0271-459E-92AF-31F8FBE02026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57301133-0271-459E-92AF-31F8FBE02026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57301133-0271-459E-92AF-31F8FBE02026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{D01C72E1-CE9E-426C-B0AE-91CB3704629D} = {77FAB040-9509-4110-9946-E53FF6644BED}
 		{0DFF80E8-5CF5-47B5-8A2A-9E947F00C029} = {94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}
 		{AA98BA65-B2F2-4BC0-A2C1-B1EE37F74BBC} = {C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}
+		{57301133-0271-459E-92AF-31F8FBE02026} = {94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4FCC403-F024-4C95-837F-839D0F59A661}

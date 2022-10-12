@@ -16,7 +16,7 @@ namespace ppedv.MegaShop5024.Application.ProductService
         public Product GetBestWeightPriceProduct()
         {
             return Repository.Query<Product>()
-                             .OrderBy(x => ((decimal)x.Weight / x.Price))
+                             .OrderByDescending(x => ((decimal)x.Weight / x.Price))
                              .FirstOrDefault();
         }
     }
