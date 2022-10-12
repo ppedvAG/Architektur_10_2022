@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{701EB135-C56
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.API.Web", "ppedv.MegaShop5024.API.Web\ppedv.MegaShop5024.API.Web.csproj", "{3071D3AB-D5BF-409E-AC0C-411C5CCCC9D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.UI.BlazorServer", "ppedv.MegaShop5024.UI.BlazorServer\ppedv.MegaShop5024.UI.BlazorServer.csproj", "{47FA3CEC-699C-4B52-B77D-A9A01560B923}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{3071D3AB-D5BF-409E-AC0C-411C5CCCC9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3071D3AB-D5BF-409E-AC0C-411C5CCCC9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3071D3AB-D5BF-409E-AC0C-411C5CCCC9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47FA3CEC-699C-4B52-B77D-A9A01560B923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47FA3CEC-699C-4B52-B77D-A9A01560B923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47FA3CEC-699C-4B52-B77D-A9A01560B923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47FA3CEC-699C-4B52-B77D-A9A01560B923}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{B2FAB8FB-E4DD-4B3E-B9F3-EDB41855EEA0} = {C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}
 		{C3B686E1-2D64-49F2-A9AD-0F4820781B36} = {C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}
 		{3071D3AB-D5BF-409E-AC0C-411C5CCCC9D6} = {701EB135-C564-45B4-8DE5-560599E3EB97}
+		{47FA3CEC-699C-4B52-B77D-A9A01560B923} = {C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4FCC403-F024-4C95-837F-839D0F59A661}

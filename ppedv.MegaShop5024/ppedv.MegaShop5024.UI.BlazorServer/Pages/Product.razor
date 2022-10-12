@@ -1,0 +1,29 @@
+﻿@page "/product"
+@using ppedv.MegaShop5024.Model.Contracts
+@inject IRepository Repo
+
+<h3>Product</h3>
+<ul>
+    @foreach (var item in prods)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+<button @onclick="bla">NEU</button>
+
+@code {
+    private List<ppedv.MegaShop5024.Model.DomainModel.Product> prods;
+
+    protected override async Task OnInitializedAsync()
+    {
+        prods = Repo.Query<ppedv.MegaShop5024.Model.DomainModel.Product>().ToList();
+
+    }
+
+
+    void bla()
+    {
+        prods.Add(new ppedv.MegaShop5024.Model.DomainModel.Product() { Name = "AAAAAAAAAAA" });
+    }
+}

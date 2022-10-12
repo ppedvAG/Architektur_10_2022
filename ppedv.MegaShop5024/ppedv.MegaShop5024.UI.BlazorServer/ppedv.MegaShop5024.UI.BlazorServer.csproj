@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ppedv.MegaShop5024.Data.EfCore\ppedv.MegaShop5024.Data.EfCore.csproj" />
+    <ProjectReference Include="..\ppedv.MegaShop5024.Model\ppedv.MegaShop5024.Model.csproj" />
+  </ItemGroup>
+
+</Project>
