@@ -30,7 +30,7 @@ IProductManager pm = container.Resolve<IProductManager>();
 IValidationManager vm = container.Resolve<IValidationManager>();
 IDemoManager demo = container.Resolve<IDemoManager>();
 
-demo.CreateAndStoreDemoDaten();
+//demo.CreateAndStoreDemoDaten();
 
 var bestProd = pm.GetBestWeightPriceProduct();
 Console.WriteLine($"Bestes: {bestProd.Name}");
