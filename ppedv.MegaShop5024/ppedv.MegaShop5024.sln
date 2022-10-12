@@ -23,11 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.UI.TestC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.Application.ProductService.Tests", "ppedv.MegaShop5024.Application.ProductService.Tests\ppedv.MegaShop5024.Application.ProductService.Tests.csproj", "{57301133-0271-459E-92AF-31F8FBE02026}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Application.ValidationService", "ppedv.MegaShop5024.Application.ValidationService\ppedv.MegaShop5024.Application.ValidationService.csproj", "{4AA9EA59-A893-4DCD-A85C-CE88AE0FC334}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.Application.ValidationService", "ppedv.MegaShop5024.Application.ValidationService\ppedv.MegaShop5024.Application.ValidationService.csproj", "{4AA9EA59-A893-4DCD-A85C-CE88AE0FC334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.Application.DemoDatenService", "ppedv.MegaShop5024.Application.DemoDatenService\ppedv.MegaShop5024.Application.DemoDatenService.csproj", "{C8787A67-98AE-43DB-A996-BA5725B6D715}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.Application.DemoDatenService", "ppedv.MegaShop5024.Application.DemoDatenService\ppedv.MegaShop5024.Application.DemoDatenService.csproj", "{C8787A67-98AE-43DB-A996-BA5725B6D715}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.UI.Wpf", "ppedv.MegaShop5024.UI.Wpf\ppedv.MegaShop5024.UI.Wpf.csproj", "{B2FAB8FB-E4DD-4B3E-B9F3-EDB41855EEA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.MegaShop5024.UI.Wpf", "ppedv.MegaShop5024.UI.Wpf\ppedv.MegaShop5024.UI.Wpf.csproj", "{B2FAB8FB-E4DD-4B3E-B9F3-EDB41855EEA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.MegaShop5024.UI.WebMVC", "ppedv.MegaShop5024.UI.WebMVC\ppedv.MegaShop5024.UI.WebMVC.csproj", "{C3B686E1-2D64-49F2-A9AD-0F4820781B36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{B2FAB8FB-E4DD-4B3E-B9F3-EDB41855EEA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2FAB8FB-E4DD-4B3E-B9F3-EDB41855EEA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2FAB8FB-E4DD-4B3E-B9F3-EDB41855EEA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3B686E1-2D64-49F2-A9AD-0F4820781B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3B686E1-2D64-49F2-A9AD-0F4820781B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3B686E1-2D64-49F2-A9AD-0F4820781B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3B686E1-2D64-49F2-A9AD-0F4820781B36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,6 +91,7 @@ Global
 		{4AA9EA59-A893-4DCD-A85C-CE88AE0FC334} = {94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}
 		{C8787A67-98AE-43DB-A996-BA5725B6D715} = {94C93CD6-ACF9-42B1-B5E6-76ECB8C22E36}
 		{B2FAB8FB-E4DD-4B3E-B9F3-EDB41855EEA0} = {C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}
+		{C3B686E1-2D64-49F2-A9AD-0F4820781B36} = {C4FE95BF-65AB-451C-8EF9-AB6EFDC5616B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C4FCC403-F024-4C95-837F-839D0F59A661}
