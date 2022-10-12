@@ -7,8 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
+    <ItemGroup>
+    <ProjectReference Include="..\ppedv.MegaShop5024.Application.DemoDatenService\ppedv.MegaShop5024.Application.DemoDatenService.csproj" />
+    <ProjectReference Include="..\ppedv.MegaShop5024.Application.ProductService\ppedv.MegaShop5024.Application.ProductService.csproj" />
+    <ProjectReference Include="..\ppedv.MegaShop5024.Application.ValidationService\ppedv.MegaShop5024.Application.ValidationService.csproj" />
+    <ProjectReference Include="..\ppedv.MegaShop5024.Data.EfCore\ppedv.MegaShop5024.Data.EfCore.csproj" />
+    <ProjectReference Include="..\ppedv.MegaShop5024.Model\ppedv.MegaShop5024.Model.csproj" />
   </ItemGroup>
 
 </Project>

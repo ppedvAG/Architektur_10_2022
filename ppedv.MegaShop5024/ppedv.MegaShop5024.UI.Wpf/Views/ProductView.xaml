@@ -3,9 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:ppedv.MegaShop5024.UI.Wpf.Views"
+             xmlns:local="clr-namespace:ppedv.MegaShop5024.UI.Wpf.Views" 
+             xmlns:viewmodels="clr-namespace:ppedv.MegaShop5024.UI.Wpf.ViewModels"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450"
+             d:DesignWidth="800">
+    <UserControl.DataContext>
+        <viewmodels:ProductViewModel/>
+    </UserControl.DataContext>
     <DockPanel>
         <WrapPanel DockPanel.Dock="Top">
             <Button>Speichern</Button>
@@ -18,7 +23,10 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <DataGrid />
+            
+            <DataGrid SelectedItem="{Binding SelectedProduct}"
+                      ItemsSource="{Binding ProductList}" />
+            
             <Grid Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -32,15 +40,16 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Label>Name</Label>
-                <TextBox Grid.Column="1"/>
+                <TextBox Grid.Column="1" Text="{Binding SelectedProduct.Name}"/>
                 <Label Grid.Row="1">Description</Label>
-                <TextBox Grid.Row="1" Grid.Column="1"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedProduct.Description}"/>
                 <Label Grid.Row="2">Weight</Label>
-                <TextBox Grid.Row="2" Grid.Column="1"/>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedProduct.Weight}"/>
                 <Label Grid.Row="3">Price</Label>
-                <TextBox Grid.Row="3" Grid.Column="1"/>
+                <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SelectedProduct.Price}"/>
                 <GroupBox Grid.Row="4" Grid.ColumnSpan="2" Header="Categories" >
-                    <ListBox/>
+                    <ListBox ItemsSource="{Binding SelectedProduct.Categories}"
+                             DisplayMemberPath="Name"/>
                 </GroupBox>
             </Grid>
         </Grid>
