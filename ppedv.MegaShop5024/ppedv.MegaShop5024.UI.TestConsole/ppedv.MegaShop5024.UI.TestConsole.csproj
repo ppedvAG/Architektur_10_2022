@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ppedv.MegaShop5024.Application.ProductService\ppedv.MegaShop5024.Application.ProductService.csproj" />
+    <ProjectReference Include="..\ppedv.MegaShop5024.Application.ValidationService\ppedv.MegaShop5024.Application.ValidationService.csproj" />
     <ProjectReference Include="..\ppedv.MegaShop5024.Data.EfCore\ppedv.MegaShop5024.Data.EfCore.csproj" />
     <ProjectReference Include="..\ppedv.MegaShop5024.Model\ppedv.MegaShop5024.Model.csproj" />
   </ItemGroup>
