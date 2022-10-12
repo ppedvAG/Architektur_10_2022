@@ -12,4 +12,30 @@ namespace ppedv.MegaShop5024.Model.Contracts
 
         int SaveAll();
     }
+
+    public interface IUnitOfWorkQuery
+    {
+        public IQuery<Product> ProRepoQuery { get; set; }
+        //....
+        int SaveAll();
+
+    }
+    public interface IUnitOfWorkCommand : IUnitOfWorkQuery
+    {
+        public ICommand<Product> ProRepoCmd { get; set; }
+        //....
+    }
+
+    public interface IQuery<T> where T : Entity
+    {
+        IQueryable<T> Query();
+        T? GetById(int id);
+    }
+
+    public interface ICommand<T> where T : Entity
+    {
+        void Add(T entity);
+        void Delete(T entity);
+        void Update(T entity);
+    }
 }
