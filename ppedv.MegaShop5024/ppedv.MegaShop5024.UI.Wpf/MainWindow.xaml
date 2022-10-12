@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ppedv.MegaShop5024.UI.Wpf"
+        xmlns:local="clr-namespace:ppedv.MegaShop5024.UI.Wpf" 
+        xmlns:views="clr-namespace:ppedv.MegaShop5024.UI.Wpf.Views"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
@@ -24,13 +25,13 @@
 
         <TabControl>
             <TabItem Header="Produkte">
-
+                <views:ProductView/>
             </TabItem>
             <TabItem Header="Customers">
-
+                <views:CustomerView/>
             </TabItem>
             <TabItem Header="Discounts">
-
+                <views:DiscountView/>
             </TabItem>
         </TabControl>
     </DockPanel>
