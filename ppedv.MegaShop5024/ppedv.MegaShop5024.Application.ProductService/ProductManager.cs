@@ -4,7 +4,7 @@ using ppedv.MegaShop5024.Model.DomainModel;
 
 namespace ppedv.MegaShop5024.Application.ProductService
 {
-    public class ProductManager
+    public class ProductManager : IProductManager
     {
         internal IRepository Repository { get; }
 
